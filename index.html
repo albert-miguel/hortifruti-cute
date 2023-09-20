@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
-    <title>Hortifrúti</title>
+    <title>Hortifrúti Cute</title>
   </head>
   <body style="min-width: 372;">
       <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
@@ -48,8 +48,46 @@
          </div>
       </nav>
 
-      <header>
-
+      <header class="container">
+         <div id="carouselMain" class="carousel carousel-dark slide" >
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2" aria-label="Slide 3"></button>
+             </div>
+            <div class="carousel-inner">
+               <div class="carousel-item active text-center" data-interval="3000">
+                  <img src="./img/slides/slide01.jpg" class="img-fluid d-none d-md-block">
+                  <img src="./img/slides/slide01small.jpg" class="img-fluid d-block d-md-none">
+               </div>
+               <div class="carousel-item text-center" data-interval="3000">
+                  <img src="./img/slides/slide01.jpg" class="img-fluid d-none d-md-block">
+                  <img src="./img/slides/slide01small.jpg" class="img-fluid d-block d-md-none">
+               </div>
+               <div class="carousel-item text-center" data-interval="3000">
+                  <img src="./img/slides/slide01.jpg" class="img-fluid d-none d-md-block">
+                  <img src="./img/slides/slide01small.jpg" class="img-fluid d-block d-md-none">
+               </div>
+            </div>
+         </div>
+         <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselMain"
+            data-bs-slide="prev"
+         >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+         </button>
+         <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselMain"
+            data-bs-slide="next"
+         >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+         </button>
       </header>
 
       <main>
@@ -57,7 +95,19 @@
       </main>
 
       <footer class="border-top fixed-bottom text-muted bg-light">
-
+         <div class="container">
+            <div class="row py-3">
+               <div class="col-12 col-md-4 text-center text-md-left">
+                  &copy; 2020 - Hortifrúti Cute
+               </div>
+               <div class="col-12 col-md-4 text-center">
+                  <a href="#" class="text-decoration-none text-dark">Política de Privacidade</a>
+               </div>
+               <div class="col-12 col-md-4 text-center text-md-right">
+                  <a href="#" class="text-decoration-none text-dark">Administrar</a>
+               </div>
+            </div>
+         </div>
       </footer>
 
       <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
